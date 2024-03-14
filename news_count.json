@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   "data": {
+      "url": "https://raw.githubusercontent.com/armchairman/armchairman.github.io/main/s5_eco_words.csv"
+   },
+  "mark":"bar",
+  "encoding": {
+    "x": {"field": "count", "type": "quantitative"},
+    "y": {"field": "word", "sort":"-x"},
+    "color": {"value": "teal"}
+    },
+    "title": {
+      "text": "Economics Observatory",
+      "subtitle": ["Most common words 14 March 2024"]
+  }
+  }
